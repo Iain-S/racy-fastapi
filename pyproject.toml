@@ -9,8 +9,10 @@ packages = [{include = "racy"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 fastapi = "^0.92.0"
-databases = "^0.7.0"
-uvicorn = "^0.20.0"
+databases = {extras = ["asyncpg"], version = "^0.7.0"}
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+alembic = "^1.9.4"
+psycopg2 = "^2.9.5"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
