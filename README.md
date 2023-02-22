@@ -26,4 +26,3 @@ curl http://127.0.0.1:8000 &
 ```
 
 *Note* If you want to do this in a browser window, use two completely different browsers, such as Chrome and Safari.
-
