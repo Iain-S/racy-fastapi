@@ -1,8 +1,8 @@
 # racy-fastapi
 
-A demonstation of race conditions to look out for when using FastAPI.
+A demonstration of race conditions to look out for when using FastAPI.
 
-## Run
+## Pre-requisites
 
 Install dependencies and apply database migration:
 
@@ -11,6 +11,10 @@ poetry install
 poetry shell
 alembic upgrade head
 ```
+
+## Run
+
+### Manual
 
 Start the app:
 
@@ -26,3 +30,9 @@ curl http://127.0.0.1:8000 &
 ```
 
 *Note* If you want to do this in a browser window, use two completely different browsers, such as Chrome and Safari.
+
+### Automatic
+
+```shell
+pytest tests/
+```

@@ -13,6 +13,8 @@ databases = {extras = ["asyncpg"], version = "^0.7.0"}
 uvicorn = {extras = ["standard"], version = "^0.20.0"}
 alembic = "^1.9.4"
 psycopg2 = "^2.9.5"
+pytest = "^7.2.1"
+httpx = "^0.23.3"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
